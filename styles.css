@@ -1,0 +1,146 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: hsl(210, 36%, 96%);
+}
+main{
+  text-align: center;
+  width: 500px;
+  margin: 150px auto 0;
+  padding: 20px;
+  background-color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: #0000003b 0px 0px 20px;
+}
+.counter{
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, 0);
+  top: 5px;
+  background-color: cornflowerblue;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 5px solid rgb(10, 118, 170);
+  display: flex;
+  justify-content: space-evenly;
+  width: 55%;
+}
+.counter div{
+  font-size: 10px;
+  background-color: inherit;
+  padding: 3px 13px;
+  width: 100%;
+  border-radius: 10px;
+}
+.counter p{
+  font-size: 20px;
+  display: grid;
+}
+input[type="text"]{
+  width: 80%;
+  background-color: #ebebeb;
+  border: none;
+  padding: 10px 0;
+  border-radius: 10px 0 0 10px;
+  padding-left: 20px;
+}
+
+input[type="submit"] {
+  width: 15%;
+  background-color: #b2efff;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 0px 10px 10px 0;
+  margin-left: -5px;
+  transition: .5s;
+}
+@media (max-width:800px) {
+  main{
+    width: unset;
+    margin-right: 20px;
+    margin-left: 20px;
+
+  }
+  input[type="text"] {
+    width: 70%;
+  }
+}
+input[type="submit"]:hover{
+  background-color: #05c5f5;
+  color: white;
+  cursor: pointer;
+}
+.list{
+  margin: 20px;
+  text-align: left;
+}
+.list div{
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cecece;
+}
+p{
+  margin: 0;
+}
+button{
+  border: none;
+  background-color: unset;
+  color: #fa5d5d;
+  letter-spacing: 10px;
+  cursor: pointer;
+}
+.item .del{
+  color: #fa5d5d;
+}
+.item .del:hover{
+  color: #fa3030;
+  cursor: pointer;;
+}
+.item .edit{
+  color: #1fc700;
+  margin-right: 10px;
+}
+
+.item .edit:hover {
+  color: #157a01;
+  cursor: pointer;
+  ;
+}
+.done{
+  background-color: #11588a63 !important;
+}
+.done span{
+  /* background-color: green; */
+  background-color: #a446fc;
+  color: white;
+}
+
+.alert{
+  width: 80%;
+    margin: auto;
+    height: 20px;
+    margin-top: 45px;
+}
+.remove{
+  background-color: #fa5d5d54;
+  color: #e15c5c;
+}
+.add{
+  background-color:#a0f3a07a;
+  color: #03b803;
+}
+.edit {
+  background-color: #a0f3a07a;
+  color: #03b803;
+}
+/* .show{
+  display: block;
+} */
